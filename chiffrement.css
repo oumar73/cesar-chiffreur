@@ -1,0 +1,265 @@
+body{
+    background: url(./chiffrement.jpeg) center/cover ;
+    
+    height: 100vh;
+    color: green;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+h1{
+    margin-left:20px;
+    /* color: #e6edf3; */
+    /* color: #58a700; */
+    color: #00d4ff;
+}
+.le_tout{
+    /* border: 1px solid; */
+    height: 90%;
+    width: 50%;
+    /* background-color: #0d1117; */
+}
+.le_tout p{
+    font-size: 1.5rem;
+    margin-left: 7px;
+    color: #00d4ff;
+}
+#textarea{
+    width: 90%;
+    height:30% ;
+    background: #161b22;
+    color: #c9d1d9;
+    font-size: 1.3rem;
+    resize: none;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+#textarea::placeholder{
+    font-size: 1.5rem;
+    
+}
+.bouton_copier_effacer{
+    margin-top: 10px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 5%;
+}
+.bouton_copier_effacer button{
+    height: 50px;
+    width: 30%;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    background: #30363d;
+    color: white;
+    border-color: #c9d1d9;
+}
+h3{
+    font-size: 2rem;
+    margin: 10px;
+    color: #00d4ff;
+}
+.decalage_en_bas{
+    /* border: 1px solid; */
+    width: 90%;
+    height:60px ;
+    display: flex;
+    align-items: center;
+    
+}
+.decalage_en_bas input{
+    height: 100%;
+    width: 40%;
+    margin-left: 10%;
+    text-align: center;
+    background: transparent;
+    color: green;
+    font-size:2.5rem ;
+    border: 1px solid;
+    margin-right: 7%;
+    background: #1f2732;
+    border:1px solid ;
+    color: white;
+    border-radius: 20px;
+    border-color: #c9d1d9;
+}
+.decalage_en_bas .Plus_moin{
+    /* border: 1px solid white; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-right: 7%;
+
+    
+}
+.decalage_en_bas .Plus_moin button{
+    height: 100%;
+    width: 50%;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-size: 2.7rem;
+    background: #30363d;
+    color: white;
+    border-color: #c9d1d9;
+}
+.bouton_chiffrer_dechiffrer{
+    margin-top: 40px;
+    /* border: 1px solid white; */
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.bouton_chiffrer_dechiffrer button{
+    width:40%;
+    border-radius: 20px;
+    height: 80%;
+    font-size: 1.3rem;
+    border-color: aliceblue;
+    
+}
+#chiffrer{
+    /* background: #238636 */
+    background: #39ff14;
+}
+#dechiffrer{
+    background: #2ea44f;
+}
+button{
+    transition: 0.5s;
+}
+button:hover{
+    transform: scale(1.095);
+}
+
+.dechiffrement{
+    position: absolute;
+    border: 3px solid red;
+    height: 80%;
+    width: 80%;
+   margin-left: 10%;
+   display: grid;
+   grid-template-rows: 10% 90%;
+   justify-items: center;
+   align-content: center;
+    background: #161b22;
+}
+.dechiffrement .bouton_retour_message{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+.dechiffrement .bouton_retour_message h4{
+    margin: 0;
+    margin-right: 5%;
+    color: rgb(100, 245, 100);
+    font-size: 1.9rem;
+    text-align: center;
+    
+}
+.bouton_retour_message button{
+    width: 100%;
+    height: 70px;
+    font-size:1.6rem ;
+    border-radius: 20px;
+    background: black;
+    color: #2ea44f;
+    border-color: white;
+}
+.dechiffrement button:hover{
+    transform: scale(1.050);
+}
+.proposition_solution{
+    border: 1px solid blue;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.proposition_solution ul{
+    border: 1px solid rgb(0, 255, 85);
+    height: 97%;
+    overflow-x: auto;
+    width: 100%;
+    
+} 
+.proposition_solution ul li{
+    margin-left: 70px;
+    font-size: 1.5rem;
+}
+
+
+
+.proposition_solution ul li::marker{
+    content: "Décalage : ";
+}
+
+
+
+
+
+.hidden{
+    display: none;
+}
+@media (max-width:480px) {
+    /* h1{
+        color: white;
+    } */
+     body{
+        padding-left:0;
+        
+        
+     }
+     #textarea{
+        width: 98%;
+        
+     }
+    .le_tout{
+        width: 100%;
+        /* height: 100%; */
+        
+    }
+    .dechiffrement{
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .bouton_retour_message button{
+        /* width: 100%;
+        height: 100%; */
+        font-size: 0.8rem;
+    }
+    .dechiffrement .bouton_retour_message h4{
+        font-size: 0.95rem;
+    
+    }
+    .liste_proposition{
+        width: 100%;
+        overflow-y: auto;
+        padding: 0;
+    }
+   .proposition_solution ul li{
+       
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+    .hidden{
+    display: none;
+    }
+    
+}
